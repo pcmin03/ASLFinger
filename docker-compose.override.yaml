@@ -1,0 +1,8 @@
+services:
+  asl:
+    volumes:
+      - /team/team_blu3/:/team/team_blu3/
+      - /localdata1/:/localdata1/
+      - /home/cmpark:/home/cmpark
+      - /nvme1:/nvme1
+      - /data/unknown/:/data/unknown/
