@@ -48,6 +48,9 @@ scikit-learn-intelex
 scipy
 seaborn
 tensorboard
+tensorflow
+tensorflow-addons==0.20.0
+keras==2.12.0
 tqdm
 plotly
 kaleido  # Save images with Plotly

@@ -42,6 +42,14 @@ services:
         UID: ${UID}
         TZ: ${TZ:-Asia/Seoul}
         PILLOW_SIMD_VERSION: ${PILLOW_SIMD_VERSION:-9.0.0.post1}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+              
 networks: # 방화벽과 네트워크 충돌을 피하기 위해 별도의 네트워크를 생성하지 않도록 함.
   default:
     name: host
